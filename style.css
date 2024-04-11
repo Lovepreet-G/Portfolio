@@ -177,9 +177,9 @@ nav ul li a
 }
 .container
 {
-    opacity: 0%;
+    opacity: 50%;
     position: relative;
-    margin-top: -101.4%;
+    margin-top: -101.6%;
     height: inherit;
     width: inherit;
     display: flex;
@@ -194,7 +194,7 @@ nav ul li a
 .container:hover
 {
     opacity: 100%;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .project-heading
 {
