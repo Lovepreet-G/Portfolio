@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="Resource/Logo.png">
     <title>Lovepreet Singh | Full-Stack Web Developer</title>
     <meta
       name="description"
@@ -26,8 +27,8 @@
     <header class="site-header" id="top">
       <nav class="nav">
         <a class="brand" href="#top" aria-label="Go to top">
-          <span class="brand-dot"></span>
-          <span class="brand-text">Lovepreet Singh</span>
+            <img class="brand-logo" src="Resource/Logo.png" alt="Lovepreet Singh logo" />
+            <span class="brand-text">Lovepreet Singh</span>
         </a>
 
         <button class="nav-toggle" aria-expanded="false" aria-controls="navLinks">
@@ -187,59 +188,100 @@
       </section>
 
       <section class="section" id="contact">
-        <div class="section-inner">
-          <h2 class="section-title">Contact</h2>
-          <p class="section-lead">
-            Want to work together? Send a message — I usually respond quickly.
-          </p>
+  <div class="section-inner">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-lead">
+      Let’s connect — quickest way is email.
+    </p>
 
-          <div class="contact-grid">
-            <div class="contact-card">
-              <h3>Direct</h3>
-              <p>
-                Email: <a class="link" href="mailto:gillpreetsingh35@gmail.com">gillpreetsingh35@gmail.com</a><br />
-                LinkedIn: <a class="link" href="https://www.linkedin.com/in/lovepreet-g/" target="_blank" rel="noopener noreferrer">lovepreet-g</a><br />
-                GitHub: <a class="link" href="https://github.com/Lovepreet-G" target="_blank" rel="noopener noreferrer">Lovepreet-G</a>
-              </p>
-
-              <div class="contact-actions">
-                <a class="btn btn-primary" href="mailto:gillpreetsingh35@gmail.com?subject=Portfolio%20Inquiry">Email Me</a>
-                <a class="btn btn-outline" href="Resume Lovepreet Singh.pdf" target="_blank" rel="noopener noreferrer">Open Resume</a>
-              </div>
-            </div>
-
-            <form class="contact-form" id="contactForm">
-              <div class="field-row">
-                <label class="label" for="name">Name</label>
-                <input class="input" id="name" name="name" placeholder="Your name" required />
-              </div>
-
-              <div class="field-row">
-                <label class="label" for="email">Email</label>
-                <input class="input" id="email" name="email" type="email" placeholder="you@email.com" required />
-              </div>
-
-              <div class="field-row">
-                <label class="label" for="message">Message</label>
-                <textarea class="textarea" id="message" name="message" rows="6" placeholder="Tell me what you’re building..." required></textarea>
-              </div>
-
-              <div class="form-actions">
-                <button class="btn btn-primary" type="submit">Send</button>
-                <p class="form-hint" id="formHint">
-                  This form opens your email app.
-                </p>
-              </div>
-            </form>
+    <div class="contact-tiles">
+      <!-- Email -->
+      <article class="tile">
+        <div class="tile-top">
+          <div class="tile-icon" aria-hidden="true">✉️</div>
+          <div>
+            <h3 class="tile-title">Email</h3>
+            <p class="tile-subtitle">Best for opportunities & collaborations</p>
           </div>
         </div>
-      </section>
+
+        <div class="tile-value">
+          <a class="link" href="mailto:gillpreetsingh35@gmail.com">gillpreetsingh35@gmail.com</a>
+        </div>
+
+        <div class="tile-actions">
+          <a class="btn btn-primary" href="mailto:gillpreetsingh35@gmail.com?subject=Portfolio%20Inquiry">Email Me</a>
+          <button class="btn btn-outline copy-btn" type="button" data-copy="gillpreetsingh35@gmail.com">
+            Copy
+          </button>
+        </div>
+      </article>
+
+      <!-- GitHub -->
+      <article class="tile">
+        <div class="tile-top">
+          <div class="tile-icon" aria-hidden="true">💻</div>
+          <div>
+            <h3 class="tile-title">GitHub</h3>
+            <p class="tile-subtitle">Code, projects & repositories</p>
+          </div>
+        </div>
+
+        <div class="tile-value">
+          <a class="link" href="https://github.com/Lovepreet-G" target="_blank" rel="noopener noreferrer">
+            github.com/Lovepreet-G
+          </a>
+        </div>
+
+        <div class="tile-actions">
+          <a class="btn btn-outline" href="https://github.com/Lovepreet-G" target="_blank" rel="noopener noreferrer">Open</a>
+          <button class="btn btn-outline copy-btn" type="button" data-copy="https://github.com/Lovepreet-G">
+            Copy
+          </button>
+        </div>
+      </article>
+
+      <!-- LinkedIn -->
+      <article class="tile">
+        <div class="tile-top">
+          <div class="tile-icon" aria-hidden="true">🔗</div>
+          <div>
+            <h3 class="tile-title">LinkedIn</h3>
+            <p class="tile-subtitle">Recruiters & professional network</p>
+          </div>
+        </div>
+
+        <div class="tile-value">
+          <a class="link" href="https://www.linkedin.com/in/lovepreet-g/" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/lovepreet-g
+          </a>
+        </div>
+
+        <div class="tile-actions">
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/lovepreet-g/" target="_blank" rel="noopener noreferrer">Open</a>
+          <button class="btn btn-outline copy-btn" type="button" data-copy="https://www.linkedin.com/in/lovepreet-g/">
+            Copy
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <div class="contact-bottom">
+      <a class="btn btn-outline" href="Resume Lovepreet Singh.pdf" target="_blank" rel="noopener noreferrer">
+        Open Resume
+      </a>
+      <span class="contact-note" id="copyHint">Tip: use “Copy” to paste quickly in applications.</span>
+    </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
       <div class="footer-inner">
-        <p>© <span id="year"></span> Lovepreet Singh</p>
-        <a class="link" href="#top">Back to top</a>
+        <p class="footer-brand">
+            <img class="footer-logo" src="Resource/Logo.png" alt="" aria-hidden="true" />
+            © <span id="year"></span> Lovepreet Singh
+        </p>
       </div>
     </footer>
 

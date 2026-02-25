@@ -287,26 +287,30 @@ function setupProgressBar() {
   });
 }
 
-function setupContactForm() {
-  const form = $("#contactForm");
-  const hint = $("#formHint");
+function setupCopyButtons() {
+  const hint = document.getElementById("copyHint");
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
+  document.querySelectorAll(".copy-btn").forEach((btn) => {
+    btn.addEventListener("click", async () => {
+      const text = btn.getAttribute("data-copy") || "";
+      try {
+        await navigator.clipboard.writeText(text);
+        btn.classList.add("copied");
+        const old = btn.textContent;
+        btn.textContent = "Copied ✓";
 
-    const name = $("#name").value.trim();
-    const email = $("#email").value.trim();
-    const message = $("#message").value.trim();
+        if (hint) hint.textContent = "Copied to clipboard.";
 
-    const subject = encodeURIComponent(`Portfolio Inquiry — ${name || "Someone"}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}\n`
-    );
-
-    // No backend needed: opens mail client
-    window.location.href = `mailto:gillpreetsingh35@gmail.com?subject=${subject}&body=${body}`;
-
-    hint.textContent = "Opening your email app…";
+        setTimeout(() => {
+          btn.textContent = old;
+          btn.classList.remove("copied");
+          if (hint) hint.textContent = "Tip: use “Copy” to paste quickly in applications.";
+        }, 1200);
+      } catch (e) {
+        // fallback: select via prompt
+        window.prompt("Copy this:", text);
+      }
+    });
   });
 }
 
@@ -337,5 +341,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setupNav();
   setupProgressBar();
-  setupContactForm();
+  setupCopyButtons();
 });
