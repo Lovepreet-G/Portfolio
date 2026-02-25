@@ -1,205 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lovepreet Singh</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="nav-menu">
-                <li><img id="logo" src="Resource/Logo.png" alt="LS Logo" ></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="intro">
-            <span>I'M <span id="name">LOVEPREET SINGH</span> <br>
-                WEB DEVELOPER</span>
-                <span class="dummy"></span> 
-                <span class="mobile-pic"><img src="Resource/Mypic2.png" alt="My pic"></span>     
-            
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lovepreet Singh | Full-Stack Web Developer</title>
+    <meta
+      name="description"
+      content="Lovepreet Singh — Full-Stack Web Developer (React, Node.js, MySQL, Laravel). Builder of GarageFlow (multi-tenant garage management SaaS)."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Top progress bar -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand-dot"></span>
+          <span class="brand-text">Lovepreet Singh</span>
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="navLinks">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="btn btn-outline" href="Resume Lovepreet Singh.pdf" target="_blank" rel="noopener noreferrer">
+            Resume
+          </a>
         </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-left">
+          <p class="eyebrow">Full-Stack Web Developer • Canada</p>
+
+          <h1 class="hero-title">
+            I build <span class="accent">production-ready</span> web apps
+            that scale.
+          </h1>
+
+          <p class="hero-subtitle">
+            React • Node.js/Express • MySQL • Laravel/PHP • Authentication • PDF generation • Deployment
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-outline" href="#contact">Contact</a>
+          </div>
+
+          <div class="hero-badges" aria-label="Quick highlights">
+            <span class="pill">GarageFlow SaaS</span>
+            <span class="pill">Multi-tenant</span>
+            <span class="pill">Performance optimization</span>
+            <span class="pill">Secure auth</span>
+          </div>
+
+          <div class="hero-social">
+            <a class="link" href="https://github.com/Lovepreet-G" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <span class="dot">•</span>
+            <a class="link" href="https://www.linkedin.com/in/lovepreet-g/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span class="dot">•</span>
+            <a class="link" href="https://garageflow.online" target="_blank" rel="noopener noreferrer">GarageFlow</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="avatar">
+            <img src="Resource/Profile.png" alt="Lovepreet Singh" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-fallback')" />
+            <div class="avatar-fallback-ui" aria-hidden="true">
+              <span>LS</span>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <p class="hero-card-title">Currently</p>
+            <p class="hero-card-text">
+              Building <strong>GarageFlow</strong>, a multi-tenant garage management SaaS with invoicing, customers, vehicles,
+              analytics, PDF generation, and production deployment.
+            </p>
+          </div>
+        </div>
+      </section>
     </header>
-    <section id="about">
-        <h2 class="heading"><span>About</span></h2>
-        <p>I am a skilled web developer with expertise in HTML, CSS, PHP, JavaScript, and C. With a strong passion for coding and a commitment to delivering high-quality projects, I have a proven track record of creating responsive and visually appealing websites. Whether it’s building interactive web applications or optimizing website performance, I am dedicated to providing innovative solutions that meet my clients’ needs. If you’re looking for a talented web developer who can turn your ideas into reality, feel free to reach out to me. I am eager to take on new challenges and contribute to the success of your projects. Let’s work together to bring your web development visions to life!</p>
 
-    </section>
-    <section id="my-skills">
-        <h2 class="heading">My Skills</h2>
-        <div class="flex">
-            <div class="card1">
-                <img src="Resource/html.png" alt="Html Logo" >
-                Html
+    <main>
+      <section class="section" id="about">
+        <div class="section-inner">
+          <h2 class="section-title">About</h2>
+          <p class="section-lead">
+            I'm a full-stack developer experienced in building and deploying web applications for high-traffic and client-facing platforms.
+            I focus on clean UI, secure backend systems, performance, and reliable deployment.
+          </p>
+
+          <div class="info-grid">
+            <div class="info-card">
+              <h3>What I do</h3>
+              <ul>
+                <li>Full-stack web apps (React + Node/Express)</li>
+                <li>MySQL design + query optimization</li>
+                <li>Auth, role-based access, multi-tenant apps</li>
+                <li>Deployment (Nginx, PM2, SSL, backups)</li>
+              </ul>
             </div>
-            <div class="card1">
-                <img src="Resource/css.png" alt="Css Logo" >
-                Css
+
+            <div class="info-card">
+              <h3>Industries</h3>
+              <ul>
+                <li>Telecom platforms</li>
+                <li>Banking apps</li>
+                <li>Healthcare services</li>
+                <li>Automotive SaaS</li>
+              </ul>
             </div>
-            <div class="card1">
-                <img src="Resource/js.png" alt="JavaScript Logo" >                
-                JavaScript
+
+            <div class="info-card">
+              <h3>Quick details</h3>
+              <ul>
+                <li>Location: Ontario, Canada</li>
+                <li>Email: <a class="link" href="mailto:gillpreetsingh35@gmail.com">gillpreetsingh35@gmail.com</a></li>
+                <li>Phone: <a class="link" href="tel:+16473249662">+1 (647) 324-9662</a></li>
+              </ul>
             </div>
-            <div class="card1">
-                <img src="Resource/php.png" alt="Php logo" >
-                php
-            </div>
-            <div class="card1">
-                <img src="Resource/sql.png" alt="sql logo" >
-                Sql                
-            </div>
-            <div class="card1">
-                <img src="Resource/figma.png" alt="Figma Logo" >
-                Figma
-            </div>
-            <div class="card1">
-                <img src="Resource/C.png" alt="C logo" >
-                C
-            </div>
-            <div class="card1">
-                <img src="Resource/cc.png" alt="C# logo" >                
-                C#
-            </div>
+          </div>
         </div>
+      </section>
 
-    </section>
-    <section id="portfolio">
-        <h2 class="heading"> Portfolio</h2>
-        <div class="flex">
-            <div class="card2">
-                <img src="Resource/bk 1.jpg"  alt="background">
-                <div class="container" >
-                    <span class="project-heading">Blog Page</span>
-                    <p class="project-detail">Created a Wire Frame and prototype</p>
-                        <a href="https://www.figma.com/proto/lZjrz7vm3cxLQtXZ6hB1DF/Project-1?type=design&node-id=30-4&t=ShyuJ8J6606v3fBO-1&scaling=scale-down-width&page-id=0%3A1&mode=design" target="_blank"><button class="button">Click here</button></a>
-                </div>
+      <section class="section" id="skills">
+        <div class="section-inner">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-lead">Core stack + tools I use to build and ship production apps.</p>
 
-            </div>
-            <div class="card2">
-                <img src="Resource/Bg2.jpg"  alt="background">
-                <div class="container">
-                    <span class="project-heading">Book Store Website</span>
-                    <p class="project-detail">A Website to buy and Sell Used Books</p>
-                        <a href="https://github.com/Lovepreet-G/Book-Selling-Website" target="_blank" rel="noopener noreferrer"><button class="button">Click here</button></a>
-                </div>
-
-            </div>
-            <div class="card2">
-                
-                <img src="Resource/Bg3.jpg" alt="background" >
-                <div ></div>
-                <div class="container">
-                    <span class="project-heading">E-Commerce</span>
-                    <p class="project-detail">Redesigned 4 page of Arngen Website</p>
-                        <a href="https://www.figma.com/proto/KJZWVLUwDuBO49EadMNKb2/Arngren-redesign---prototype?type=design&node-id=1-1730&t=XB0iikHMF3985mQ7-1&scaling=scale-down&page-id=0%3A1&mode=design" target="_blank" rel="noopener noreferrer"><button class="button">Click here</button></a>
-                </div>
-            </div>
-            <div class="card2">
-                <img src="Resource/Bg4.jpg"  alt="background">
-                <div class="container">
-                    <span class="project-heading">Added A/Q Feature</span>
-                    <p class="project-detail">Added Question and Answer Feature in flow website</p>
-                         <a href="https://github.com/BrickMMO/flow-v1" target="_blank" rel="noopener noreferrer"><button class="button" >Click here</button></a>
-                </div>
-
-            </div>
-            <div class="card2">
-                
-                <img src="Resource/Bg3.jpg" alt="background" >
-                <div ></div>
-                <div class="container">
-                    <span class="project-heading">E-Sport Website</span>
-                    <p class="project-detail">designed E-sports website for Humber</p>
-                        <a href="https://www.figma.com/proto/CJBYWytTXOLCh9XKklh4mT/E-sports-Website?type=design&node-id=210-685&t=yiQuNCvO8LiJgK75-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=210%3A685&mode=design" target="_blank" rel="noopener noreferrer"><button class="button">Click here</button></a>
-                </div>
-            </div>
-
-            <div class="card2">
-                <img src="Resource/Bg4.jpg"  alt="background">
-                <div class="container">
-                    <span class="project-heading">Morning Perk Cafe</span>
-                    <p class="project-detail">Recipe Website build using node and spoonacular api</p>
-                         <a href="https://morning-perk-cafe.onrender.com/" target="_blank" rel="noopener noreferrer"><button class="button" >Click here</button></a>
-                </div>
-
-            </div>
-
-            <div class="card2">
-                <img src="Resource/Bg4.jpg"  alt="background">
-                <div class="container">
-                    <span class="project-heading">Expense Tracker</span>
-                    <p class="project-detail">Expense tracking Website Build using Php </p>
-                         <a href="http://lovepreet-g.infinityfreeapp.com/HTTP5225/assignment2" target="_blank" rel="noopener noreferrer"><button class="button" >Click here</button></a>
-                </div>
-            </div>
-
+          <div class="chips" id="skillsChips" aria-label="Skills list">
+            <!-- populated by main.js -->
+          </div>
         </div>
+      </section>
 
-    </section>
-    <section id="contact">
-        <h2 class="heading"> Contact Me</h2>
-        <Form class="desktop-tab">
-            <div class="input-div">
-                <label for="username" class="label-name">Name </label>
-                <input type="text" class="field" id="username" placeholder="Name">  
-            </div>
-            <div class="input-div">
-                <label for="email" class="label-name">Email </label>
-                <input type="text" class="field" id="email" placeholder="Email"> 
-            </div>
-            <div class="input-div">
-                <label for="message" class="label-name">Message </label>
-                <textarea name="message"  class="field msg" cols="30" rows="10" placeholder="Write Here..." ></textarea>          
-            </div>
-            <div class="sumbit-div">
-                <button>Send Message</button>
+      <section class="section" id="experience">
+        <div class="section-inner">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-lead">Selected roles and highlights.</p>
 
-            </div>
-        </Form>
-        <Form class="mobile">
-            
-                <label for="username" class="label-name">Name </label>
-                <input type="text" class="field" id="username" placeholder="Name">  
-            
-                <label for="email" class="label-name">Email </label>
-                <input type="text" class="field" id="email" placeholder="Email"> 
-            
-                <label for="message" class="label-name">Message </label>
-                <textarea name="message"  class="field msg" cols="30" rows="10" placeholder="Write Here..." ></textarea>          
-        
-            <div class="sumbit-div">
-                <button>Send Message</button>
+          <div class="timeline" id="experienceTimeline">
+            <!-- populated by main.js -->
+          </div>
+        </div>
+      </section>
 
+      <section class="section" id="projects">
+        <div class="section-inner">
+          <div class="section-head-row">
+            <div>
+              <h2 class="section-title">Projects</h2>
+              <p class="section-lead">Production work + portfolio builds.</p>
             </div>
-        </Form>
-    </section>
-    <div id="social">
-        <ul>
-            <li>
-                <a href="https://discord.gg/RMVRCEBuUX" target="_blank" rel="noopener noreferrer"> <img src="Resource/Social Icons.png" alt="Discord icon" ></a>
-            </li>
-            <li>
-                <a href="https://github.com/Lovepreet-G" target="_blank" rel="noopener noreferrer"> <img src="Resource/Social Icons-1.png" alt="Github icon" ></a>
-            </li>
-<!--             <li>
-                <a href="https://wa.me/9130269066" target="_blank" rel="noopener noreferrer"> <img src="Resource/Social Icons-2.png" alt="Whatsapp icon" ></a>
-            </li> -->
-            <li>
-                <a href="https://www.linkedin.com/in/lovepreet-g/" target="_blank" rel="noopener noreferrer"> <img src="Resource/Social Icons-3.png" alt="Linkdin icon" ></a>
-            </li>
-        </ul>
-    </div>
-    <Footer>
-        &copy; Copyright 2023
-    </Footer>  
+
+            <div class="filters">
+              <input id="projectSearch" class="input" type="search" placeholder="Search projects (e.g., SaaS, Laravel, PDF)" />
+              <select id="projectFilter" class="select" aria-label="Filter projects">
+                <option value="all">All</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="projects-grid" id="projectsGrid">
+            <!-- populated by main.js -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-inner">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-lead">
+            Want to work together? Send a message — I usually respond quickly.
+          </p>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3>Direct</h3>
+              <p>
+                Email: <a class="link" href="mailto:gillpreetsingh35@gmail.com">gillpreetsingh35@gmail.com</a><br />
+                LinkedIn: <a class="link" href="https://www.linkedin.com/in/lovepreet-g/" target="_blank" rel="noopener noreferrer">lovepreet-g</a><br />
+                GitHub: <a class="link" href="https://github.com/Lovepreet-G" target="_blank" rel="noopener noreferrer">Lovepreet-G</a>
+              </p>
+
+              <div class="contact-actions">
+                <a class="btn btn-primary" href="mailto:gillpreetsingh35@gmail.com?subject=Portfolio%20Inquiry">Email Me</a>
+                <a class="btn btn-outline" href="Resume Lovepreet Singh.pdf" target="_blank" rel="noopener noreferrer">Open Resume</a>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+              <div class="field-row">
+                <label class="label" for="name">Name</label>
+                <input class="input" id="name" name="name" placeholder="Your name" required />
+              </div>
+
+              <div class="field-row">
+                <label class="label" for="email">Email</label>
+                <input class="input" id="email" name="email" type="email" placeholder="you@email.com" required />
+              </div>
+
+              <div class="field-row">
+                <label class="label" for="message">Message</label>
+                <textarea class="textarea" id="message" name="message" rows="6" placeholder="Tell me what you’re building..." required></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Send</button>
+                <p class="form-hint" id="formHint">
+                  This form opens your email app.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>© <span id="year"></span> Lovepreet Singh</p>
+        <a class="link" href="#top">Back to top</a>
+      </div>
+    </footer>
+
     <script src="main.js"></script>
-    
-</body>
+  </body>
 </html>
